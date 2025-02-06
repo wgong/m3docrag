@@ -14,6 +14,8 @@ deps/vilbert-multi-task/data/
 deps/vilbert-multi-task/save/
 deps/vilbert-multi-task/multi_task_model*
 
+**/*u8hi*
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

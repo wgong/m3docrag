@@ -1,3 +1,4 @@
+LICENSE
 README.md
 pyproject.toml
 src/m3docrag/__init__.py
