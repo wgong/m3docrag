@@ -18,13 +18,13 @@ import os
 from dotenv import load_dotenv
 load_dotenv() 
 
-DOC_ROOT = "/opt/m3doc"   # custom folder
-MY_LOCAL_DATA_DIR = f"{DOC_ROOT}/job/datasets"
-MY_LOCAL_EMBEDDINGS_DIR = f"{DOC_ROOT}/job/embeddings"
-MY_LOCAL_MODEL_DIR = f"{DOC_ROOT}/job/model"
-MY_OUTPUT_DIR = f"{DOC_ROOT}/job/output"
+MY_LOCAL_ROOT = "/opt/m3doc"   # custom folder
+MY_LOCAL_DATA_DIR = f"{MY_LOCAL_ROOT}/job/datasets"
+MY_LOCAL_EMBEDDINGS_DIR = f"{MY_LOCAL_ROOT}/job/embeddings"
+MY_LOCAL_MODEL_DIR = f"{MY_LOCAL_ROOT}/job/model"
+MY_OUTPUT_DIR = f"{MY_LOCAL_ROOT}/job/output"
 
-
+LOCAL_ROOT = os.getenv("LOCAL_ROOT", MY_LOCAL_ROOT)
 LOCAL_DATA_DIR = os.getenv("LOCAL_DATA_DIR", MY_LOCAL_DATA_DIR)
 LOCAL_EMBEDDINGS_DIR = os.getenv("LOCAL_EMBEDDINGS_DIR", MY_LOCAL_EMBEDDINGS_DIR)
 LOCAL_MODEL_DIR = os.getenv("LOCAL_MODEL_DIR", MY_LOCAL_MODEL_DIR)

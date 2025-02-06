@@ -33,7 +33,8 @@ The scripts allows users to:
 ## Installation
 
 ```
-git clone https://github.com/bloomberg/m3docrag
+git clone https://github.com/wgong/m3docrag
+# git clone https://github.com/bloomberg/m3docrag
 cd m3docrag/m3docvqa
 ```
 
